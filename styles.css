@@ -1,0 +1,450 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9; /* Light background */
+    color: #333;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and Navigation Styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Allow content to grow and take available space */
+    animation: fadeIn 2s ease-in; /* Fade-in animation */
+}
+
+/* Keyframe for Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Profile Image */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Tagline Styling */
+.bio {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Call-to-Action Button */
+.cta-btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 30px;
+}
+
+.social-icon {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #45a049;
+}
+
+/* Capstone Page Styles */
+.capstone-details {
+    margin-top: 40px;
+}
+
+.capstone-summary, .capstone-technologies, .capstone-features, .capstone-demo, .capstone-github {
+    margin-bottom: 40px;
+}
+
+.capstone-details p, .capstone-details ul {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.capstone-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.capstone-details li {
+    margin-bottom: 10px;
+}
+
+/* Links for Capstone */
+.capstone-demo a, .capstone-github a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.capstone-demo a:hover, .capstone-github a:hover {
+    background-color: #45a049;
+}
+
+/* Document Links */
+.capstone-documents {
+    background-color: #f9f9f9;
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.capstone-documents h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.capstone-documents p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.document-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.document-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.document-card i {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.document-link {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.document-link:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .document-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .document-card {
+        width: 100%;
+    }
+}
+
+/* Projects Page Styles */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.project-link:hover {
+    background-color: #45a049;
+}
+
+/* Contact Page Styles */
+.contact-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in;
+}
+
+.contact-container h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-container p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    width: 30%;
+    text-align: center;
+}
+
+.contact-link {
+    font-size: 1.3rem;
+    color: #4CAF50;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.contact-link i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Social Media Icons */
+.contact-link i:hover {
+    color: #45a049;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* Contact Form (if needed) */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #45a049;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-links {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-link {
+        font-size: 1.2rem;
+    }
+
+    .contact-form button {
+        font-size: 1.1rem;
+    }
+}
